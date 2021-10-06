@@ -1,0 +1,36 @@
+header{
+    background-color: rgb(241, 218, 141);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    display: flex;
+    align-items: center;
+    z-index: 10;
+  }
+  
+h1{
+    margin: 0px;
+    margin-left: 15px;
+}
+
+#header_img{
+    min-width: 35px;
+    min-height: 35px;
+    width: 4vw;
+    height: fit-content;
+    max-width: 64px;
+    max-height: 64px;
+}
+
+.header__homeLink{
+    display: inherit;
+    align-items: center;
+    margin-left: 1%;
+}
+
+#header_right_button{
+    margin-right: 30px;
+    margin-left: auto;
+}
+
