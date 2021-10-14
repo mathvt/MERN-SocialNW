@@ -21,12 +21,6 @@
     align-items: center;
 }
 
-.personIcon{
-    transform: scale(2);
-    border-radius: 7px;
-    background-color: rgb(197, 197, 197);
-    color: rgb(129, 129, 129);
-}
 
 .msgForm__header-suscribeInfo{
     position: absolute;
@@ -35,3 +29,30 @@
     bottom: 0px;
 }
 
+
+.msgForm__body-textarea{
+    font-family: inherit;
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 20px;
+    resize: none;
+    overflow: hidden;
+    white-space: pre-wrap;
+}
+
+
+.msgForm__preview{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+.msgForm__body-foot-buttons{
+    margin-left: auto;
+}
+
+
+.msgForm__body-foot-buttons > button{
+    margin-right: 10px;
+}

@@ -1,0 +1,55 @@
+.messageBox{
+    background-color: white;
+    border: 1px solid rgb(196, 196, 196);
+    border-radius: 20px;
+    padding: 10px;
+    padding-bottom: 5px;
+}
+
+
+.message__Avatar{
+    min-width: 40px;
+    margin-top: 8px;
+    margin-left: 8px;
+}
+
+
+.message__body{
+    width: 90%;
+    margin-left: 1%;
+}
+
+
+.message__body__header{
+    margin-bottom: 7px;
+    align-items: center;
+}
+
+
+.message__body__header-pseudo{
+    font-weight: 900;
+}
+
+
+.message__body__header-date{
+    color: grey;
+    margin-left: auto;
+}
+
+
+.message__body__theMessage{
+    height: min-content;
+}
+
+.message__body__theMessage > textarea{
+    font-family: inherit;
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 20px;
+    resize: none;
+    overflow: hidden;
+    white-space: pre-wrap;
+    width: 100%;
+    color: unset;
+}
