@@ -4,7 +4,8 @@ import MenuIcon from '@mui/icons-material/Menu'
 import Menu from '@mui/material/Menu'
 
 import Nav from './nav'
-import Logout from './logout'
+import LogoutButton from './buttons/logoutButton'
+import LoginButton from './buttons/loginButton'
 
 
 export default function TheMenu(props) {
@@ -21,18 +22,20 @@ export default function TheMenu(props) {
         <div className={props.className}>
             <IconButton color="inherit" edge="end" onClick={() => setStatus(!status)}>
                 <MenuIcon/>
-                <Menu anchorEl={anchor} open={status} onClose={handleClose}>
+                <Menu anchorEl={anchor} open={status} onClose={handleClose}  sx={{border: 0}} >
                     <OptionList/>
                 </Menu>
             </IconButton>
         </div>
     )
+
+
+    function OptionList() {
+        return(
+            <Nav addTo={ props.user ? <LogoutButton/> : <LoginButton/>} />
+        )
+    }
 }
 
 
 
-function OptionList() {
-    return(
-        <Nav addTo={<Logout/>} />
-    )
-}

@@ -1,0 +1,37 @@
+.msgFormBlock{
+    margin-top: 30px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: rgb(255, 237, 213);
+}
+
+.msgForm__header{
+    position: relative;
+    width: 100%;
+    margin: 5px;
+    margin-bottom: 15px;
+
+}
+
+.msgForm__header-avatar{
+    margin: auto;
+    width: 48px;
+    height: 48px;
+    align-items: center;
+}
+
+.personIcon{
+    transform: scale(2);
+    border-radius: 7px;
+    background-color: rgb(197, 197, 197);
+    color: rgb(129, 129, 129);
+}
+
+.msgForm__header-suscribeInfo{
+    position: absolute;
+    right: 5%;
+    top: 0px;
+    bottom: 0px;
+}
+

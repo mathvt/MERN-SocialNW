@@ -11,7 +11,7 @@ header{
   
 h1{
     margin: 0px;
-    margin-left: 15px;
+    margin-left: 20%;
 }
 
 #header_img{
@@ -24,13 +24,30 @@ h1{
 }
 
 .header__homeLink{
+    width: 30%;
     display: inherit;
     align-items: center;
-    margin-left: 1%;
+    margin-left: 3%;
+    color: unset;
+    text-decoration: none;
 }
 
-#header_right_button{
-    margin-right: 30px;
+.header_right{
+    width: 100%;
+    align-items: center;
+    margin-right: 5%;
+}
+
+.header_right > div{
+    float: right;
+}
+
+.header_right > div{
     margin-left: auto;
+    margin-right: 15%;
 }
 
+
+ul.MuiList-root{
+    padding: 0px;
+}

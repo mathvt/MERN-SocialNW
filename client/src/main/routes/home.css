@@ -1,0 +1,10 @@
+.homeBox{
+    display: flex;
+    width: 100%;
+}
+
+.leftHomeBox{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}

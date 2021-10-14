@@ -1,0 +1,108 @@
+/* Container */
+.identificationBox{
+    width: 100%;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: rgb(255, 237, 213);
+}
+
+
+
+
+/* Forms */
+.userForm{
+    align-items: center;
+    background-color: transparent;
+    margin: 10px;
+    width: 100%;
+}
+
+.userForm > div{
+    display: inherit;
+    flex-direction: inherit;
+    margin: 5px;
+    margin-bottom: 6px;
+    width: 100%;
+    max-width: 300px;
+    
+}
+
+.userForm > div > label{
+    font-size: 0.9em;
+    text-align: center;
+    margin-bottom: 3px;
+}
+
+.userForm > div > input{
+    border-radius: 15px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: none;
+    outline: none;
+}
+
+.register__error{
+    margin: 0px;
+    color: red;
+    font-size: 0.8em;
+    text-align: center;
+}
+
+.userForm > .submitButton{
+    font-family: inherit;
+    margin-top: 10px;
+    padding: 5px;
+    background-color: #ffdfa0;
+    font-weight: 700;
+    border-radius: 20px;
+    border: none;
+    width: 100%;
+    max-width: 300px;
+}
+
+.submitButton:hover{
+    background-color: rgb(255, 133, 133);
+    cursor: pointer;
+}
+
+.submitButton:active{
+    background-color: rgb(252, 78, 78);
+}
+
+
+
+
+/* Switch buttons */
+.switchButtonsBox{
+    margin-right: 25px;
+    width: 25%;
+}
+
+.switchButtonsBox > button{
+    width: 100%;
+    margin-top: 10px;
+    margin-right: 10px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #fdab92;
+    border-radius: 20px;
+    border: none;
+}
+
+.switchButtonsBox > button:hover{
+    background-color: rgb(255, 144, 103);
+    cursor: pointer;
+    
+}
+
+.button-activated{
+    background-color: rgb(255, 100, 44) !important;
+}
+
+
+.flex-col >.switchButtonsBox{
+    margin: auto;
+    width: 75%;
+}

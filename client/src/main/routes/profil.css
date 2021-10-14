@@ -1,0 +1,11 @@
+#profilBox{
+    display: flex;
+}
+
+#leftProfilBox{
+    width: 100%;
+}
+
+#rightProfilBox{
+    width: 100%;
+}

@@ -3,21 +3,11 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 
-import Header from './header/header.js'
-import LateralNav from './lateralNav/lateralNav.js'
-import Main from './main/main.js'
-
-let smallScreen = 550
-
+import App from './app.js'
 
 ReactDOM.render(
   <React.StrictMode>
-    <Header smallScreen={smallScreen} />
-    <div className='mainContent'>
-      <LateralNav smallScreen={smallScreen} />
-      <Main />      
-    </div>
-
+    <App/>
   </React.StrictMode>,
   document.getElementById('root')
 );

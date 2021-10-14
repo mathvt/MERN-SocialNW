@@ -42,15 +42,17 @@ export function issueJWT(user) {
 
     const signedToken = jsonwebtoken.sign(payload, priv_key, { expiresIn, algorithm: 'RS256' })
 
-    return {
-        token: 'Bearer ' + signedToken,
-        expiresIn
-    }
+    return 'Bearer ' + signedToken
+       
 }
 
 
 export function authmiddlwr(req, res, next) {
-    const parsedToken = req.headers.authorization.split(' ')
+    let parsedToken = req.cookies['token']
+    if(req.cookies['token'])
+        parsedToken = parsedToken.split(' ')
+    else
+        return res.status(303).json(null)
 
     try {
         if (parsedToken[0] !== 'Bearer' || !/\S+\.\S+\.\S+/i.test(parsedToken[1])) throw new Error('nok')

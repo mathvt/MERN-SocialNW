@@ -10,19 +10,20 @@ import Home from './routes/home.js'
 import Trending from './routes/trending.js'
 import Profil from './routes/profil.js'
 
-function Main() {
+function Main(props) {
+
  return (
   <div className='main'>
     <Router>
       <Switch>
         <Route exact path='/'>
-          <Home />
+          <Home user={props.user} setUser={props.setUser} />
         </Route>
         <Route exact path='/trending'>
           <Trending />
         </Route>
         <Route exact path='/profil'>
-          <Profil />
+          <Profil user={props.user} setUser={props.setUser} />
         </Route>
       </Switch>
     </Router>    

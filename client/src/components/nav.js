@@ -7,21 +7,21 @@ export default function Nav(props) {
     let iconColor = '#662211'
     return (
         <div className={props.className}>
-            <MenuItem onClick={props?.handleClose}>
-                <a href="/">
-                    <HomeOutlinedIcon sx={{color: iconColor, borderLeft: props?.homeBorder}} />
-                </a>
-            </MenuItem>
-            <MenuItem onClick={props?.handleClose} >
-                <a href="/trending">
-                <WhatshotIcon sx={{color: iconColor, borderLeft: props?.trendingBorder}} />
-                </a>
-            </MenuItem>
-            <MenuItem onClick={props?.handleClose}>
-                <a href="/profil">
-                <PersonOutlineIcon sx={{color: iconColor, borderLeft: props?.profilBorder}} />
-                </a>
-            </MenuItem>
+            <a href="/">
+                <MenuItem sx={{pl: 1, pr: 1}}>
+                    <HomeOutlinedIcon sx={{ color: iconColor, borderLeft: props?.homeBorder }} />
+                </MenuItem>
+            </a>
+            <a href="/trending">
+                <MenuItem sx={{pl: 1, pr: 1}}>
+                    <WhatshotIcon sx={{ color: iconColor, borderLeft: props?.trendingBorder }} />
+                </MenuItem>
+            </a>
+            <a href="/profil">
+                <MenuItem sx={{pl: 1, pr: 1}}>
+                    <PersonOutlineIcon sx={{ color: iconColor, borderLeft: props?.profilBorder }} />
+                </MenuItem>
+            </a>
             {props.addTo}
         </div>
     )

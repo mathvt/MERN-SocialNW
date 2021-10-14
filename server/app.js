@@ -1,6 +1,8 @@
 import express from 'express'
-import './mongoDB/db.js'
+import cookieParser from 'cookie-parser'
+import logger from 'morgan'
 
+import './mongoDB/db.js'
 
 /*
     In  a .env file:
@@ -17,9 +19,13 @@ const port = process.env.PORT || 8080
 
 app .use(express.urlencoded({extended : true}))
     .use(express.json())
+    .use(cookieParser())
+    .use(logger('dev'))
 
-    .use('/newPost', msg)
+    //.use(express.static(path.join(__dirname, '../client/build')))
+
     .use('/', users)
+    .use('/', msg)
 
 
     .listen(port, () => console.log(`Server started at http://localhost:${port}`))

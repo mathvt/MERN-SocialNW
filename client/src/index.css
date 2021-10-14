@@ -1,14 +1,33 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+}
+
+body, button{
+  font-size: 1em;
+  font-family: 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 
 .mainContent{
   display: flex;
   margin-top: 70px;
+}
+
+
+/* Global rules */
+.flex{
+  display: flex;
+}
+
+.flex-col{
+  display: flex;
+  flex-direction: column;
+}
+
+.no-prop-button{
+  background-color: unset;
+  border: none;
+  padding: 0px;
 }
