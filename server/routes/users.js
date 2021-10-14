@@ -9,7 +9,6 @@ const router = express.Router()
 
 
 router.post('/login', async (req, res) => {
-    console.log('°°')
     const user = await Users.findOne({ mail: req.body.email }).catch(err => console.log(err))
     if(!user) return res.status(404).json({description: 'User not found'})
 

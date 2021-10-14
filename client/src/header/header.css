@@ -1,5 +1,4 @@
 header{
-    background-color: rgb(241, 218, 141);
     position: fixed;
     top: 0px;
     left: 0px;
@@ -7,6 +6,8 @@ header{
     display: flex;
     align-items: center;
     z-index: 10;
+    border-bottom: 1px solid rgb(182, 182, 182);
+    box-shadow: 0px 2px 3px 2px rgb(182, 182, 182);
   }
   
 h1{
@@ -19,8 +20,9 @@ h1{
     min-height: 35px;
     width: 4vw;
     height: fit-content;
-    max-width: 64px;
-    max-height: 64px;
+    max-width: 50px;
+    max-height: 50px;
+    padding: 6px;
 }
 
 .header__homeLink{
@@ -36,15 +38,13 @@ h1{
     width: 100%;
     align-items: center;
     margin-right: 5%;
+    margin-left: 20%;
 }
 
-.header_right > div{
-    float: right;
-}
 
 .header_right > div{
     margin-left: auto;
-    margin-right: 15%;
+    float: right;
 }
 
 

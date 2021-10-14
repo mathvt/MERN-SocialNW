@@ -25,7 +25,6 @@ export default function App() {
 
 
     async function isSessionExpired(){
-        console.log('check session...')
         let res = await fetch('/checkauth', {method: 'PATCH'})
         res.status !== 200 ? setUser(null) : setUser(await res.text())
     }

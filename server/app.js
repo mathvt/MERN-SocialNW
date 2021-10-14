@@ -22,7 +22,6 @@ app .use(express.urlencoded({extended : true}))
     .use(cookieParser())
     .use(logger('dev'))
 
-    //.use(express.static(path.join(__dirname, '../client/build')))
 
     .use('/', users)
     .use('/', msg)

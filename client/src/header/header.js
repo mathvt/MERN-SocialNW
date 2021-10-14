@@ -15,7 +15,7 @@ function Header(props) {
         <header>
             <a href="/" className="header__homeLink">
                 <img id='header_img' src='favicon.icon' alt='logo'></img>
-                <h1>MERN</h1>
+                <h1>Racoont</h1>
             </a>
             <div className='header_right flex'>
                 <div>{props.user && `Welcome ${props.user}`}</div>

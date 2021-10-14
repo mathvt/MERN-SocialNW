@@ -12,7 +12,7 @@ export default function IdentificationBox(props) {
   return (
     <div className={boxname}>
       <SwitchButtons buttonFocus={buttonFocus} changeButtonFocus={changeButtonFocus} flex_col={props.flex_col}/>
-        {buttonFocus ? <LoginForm setUser={props.setUser} /> : <RegisterForm />}
+      {buttonFocus ? <LoginForm setUser={props.setUser} /> : <RegisterForm />}
     </div>
   )
 }
