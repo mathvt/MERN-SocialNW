@@ -17,6 +17,7 @@ import users from './routes/users.js'
 const app = express()
 const port = process.env.PORT || 8080
 
+
 app .use(express.urlencoded({extended : true}))
     .use(express.json())
     .use(cookieParser())
@@ -26,5 +27,10 @@ app .use(express.urlencoded({extended : true}))
     .use('/', users)
     .use('/', msg)
 
+
+    .use(function (err, req, res, next) {
+        console.error(err)
+        res.status(500).send('Something broke!')
+      })
 
     .listen(port, () => console.log(`Server started at http://localhost:${port}`))

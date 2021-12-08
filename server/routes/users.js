@@ -84,3 +84,11 @@ function checkIfValid(req, res, next) {
 
     errRes.syntax.length ? res.status(400).json(errRes) : next()   
 }
+
+
+
+router.patch('/avatar', async (req, res, next) => {
+
+    let avatar = await Users.findOne({user: req.body.user}, 'avatar')
+    res.json({avatar})
+})

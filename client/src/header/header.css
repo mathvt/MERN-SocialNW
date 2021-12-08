@@ -8,6 +8,7 @@ header{
     z-index: 10;
     border-bottom: 1px solid rgb(182, 182, 182);
     box-shadow: 0px 2px 3px 2px rgb(182, 182, 182);
+    background-color: white;
   }
   
 h1{

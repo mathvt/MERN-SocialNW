@@ -19,7 +19,7 @@ export default function LoginForm(props){
             </div>
             <div>
                 <label>Password</label>
-                <input type='text' onChange={e => setPass(e.target.value)} />
+                <input type='password' onChange={e => setPass(e.target.value)} />
             </div>
             <button className='submitButton' onClick={postLogin}>
                 Log in

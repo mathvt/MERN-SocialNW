@@ -4,6 +4,7 @@
     border-radius: 20px;
     padding: 10px;
     padding-bottom: 5px;
+    margin-top: 2%;
 }
 
 
@@ -34,6 +35,7 @@
 .message__body__header-date{
     color: grey;
     margin-left: auto;
+    font-size: 0.8em;
 }
 
 
@@ -45,11 +47,35 @@
     font-family: inherit;
     border: none;
     outline: none;
-    padding: 10px;
     border-radius: 20px;
     resize: none;
     overflow: hidden;
     white-space: pre-wrap;
     width: 100%;
     color: unset;
+    margin-bottom: 5px;
+}
+
+.textBeingModified{
+    border: 1px solid rgb(196, 196, 196) !important;
+    border-radius: 20px;
+    padding: 15px;
+    width: 95% !important;
+    min-height: 30px;
+}
+
+.messageDeleted{
+    color: red;
+}
+
+.messageModified{
+    color: green;
+}
+
+.message__edit-modify{
+    margin-left: auto;
+}
+
+.message__socialButton{
+    width: 100%;
 }

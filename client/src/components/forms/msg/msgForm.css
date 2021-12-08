@@ -1,15 +1,20 @@
 .msgFormBlock{
     margin-top: 30px;
     width: 100%;
-    padding: 10px;
+    padding-top: 10px;
     border-radius: 15px;
     background-color: rgb(255, 237, 213);
+    align-items: center;
+}
+
+.msgForm__body{
+    width: 95%;
 }
 
 .msgForm__header{
     position: relative;
     width: 100%;
-    margin: 5px;
+    margin: auto;
     margin-bottom: 15px;
 
 }
@@ -47,12 +52,22 @@
     margin-bottom: 10px;
 }
 
+.msgForm__body-foot{
+    margin-top: 1%;
+    width: 97%;
+}
 
 .msgForm__body-foot-buttons{
+    
     margin-left: auto;
 }
 
 
 .msgForm__body-foot-buttons > button{
     margin-right: 10px;
+}
+
+
+#insertImg{
+    display: none;
 }

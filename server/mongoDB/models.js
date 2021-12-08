@@ -20,7 +20,7 @@ const Users = mongoose.model(
             type: String,
             required: true
         },
-        profile_img: Buffer,
+        avatar: Buffer,
         date: {
             type: Date,
             default: Date.now
@@ -32,13 +32,22 @@ const Users = mongoose.model(
 const Posts = mongoose.model(
     'posts',
     {
-        author: String,
-        body: String,
-        comments: [{ author: String, body: String, date: Date }],
-        date: { type: Date, default: Date.now },
-        hidden: Boolean,
+        user: String,
+        message: String,
+        comments: 
+        [
+            { 
+            user: String, 
+            text: String,
+            date: { type: Date, default: Date.now },
+            deleted: {type: Boolean, default: false}
+            }
+        ],
+        sort: { type: Date, default: Date.now},
+        date: Date,
+        deleted: {type: Boolean, default: false},
         like: Array,
-        img: Buffer
+        image: {type: Buffer, default: null}
     }
 )
 

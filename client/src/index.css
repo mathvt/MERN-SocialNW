@@ -31,3 +31,15 @@ body, button{
   border: none;
   padding: 0px;
 }
+
+.iconDefault{
+  color: #333333;
+}
+
+.buttonDefaultHover:hover{
+  background-color: #77777722 !important;
+}
+
+.backg-orange{
+  background-color: rgb(255, 237, 213) !important;
+}

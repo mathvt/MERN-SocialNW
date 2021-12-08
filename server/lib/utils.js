@@ -1,6 +1,7 @@
 import crypto from 'crypto'
 import jsonwebtoken from 'jsonwebtoken'
 import fs from 'fs'
+import { Posts, Users } from '../mongoDB/models.js'
 
 
 const priv_key = fs.readFileSync('./keys_ring/private.pem', 'utf-8')
@@ -48,6 +49,7 @@ export function issueJWT(user) {
 
 
 export function authmiddlwr(req, res, next) {
+    
     let parsedToken = req.cookies['token']
     if(req.cookies['token'])
         parsedToken = parsedToken.split(' ')

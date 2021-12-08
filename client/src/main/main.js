@@ -20,7 +20,7 @@ function Main(props) {
           <Home user={props.user} setUser={props.setUser} />
         </Route>
         <Route exact path='/trending'>
-          <Trending />
+          <Trending user={props.user} />
         </Route>
         <Route exact path='/profil'>
           <Profil user={props.user} setUser={props.setUser} />
